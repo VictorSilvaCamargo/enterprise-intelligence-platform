@@ -67,7 +67,10 @@ def test_app_error_and_unhandled_exceptions_are_sanitized(
 
 def test_settings_parses_comma_separated_cors_and_module_registry() -> None:
     """Settings should parse CSV CORS origins and expose planned module boundaries."""
-    settings = Settings(cors_origins="http://localhost:5173, https://app.example.com")
+    settings = Settings(
+        _env_file=None,
+        cors_origins="http://localhost:5173, https://app.example.com",
+    )
     assert settings.cors_origins == ["http://localhost:5173", "https://app.example.com"]
     assert settings.safe_database_target == "localhost:5432/eip_db"
     assert settings.safe_redis_target == "localhost:6379/0"
