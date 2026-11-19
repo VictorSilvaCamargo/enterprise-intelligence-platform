@@ -30,8 +30,9 @@ class FakeProbeManager:
 
 @pytest.fixture
 def test_settings() -> Settings:
-    """Create isolated test settings decoupled from external hosts."""
+    """Create isolated test settings decoupled from external hosts and local .env files."""
     return Settings(
+        _env_file=None,
         app_name="Enterprise Intelligence Platform",
         app_version="0.1.0",
         app_env="test",
