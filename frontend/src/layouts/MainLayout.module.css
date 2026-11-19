@@ -1,0 +1,127 @@
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.headerInner {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+@media (min-width: 768px) {
+  .headerInner {
+    padding: var(--space-3) var(--space-6);
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.logoMark {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandTitle {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--color-ink-primary);
+  letter-spacing: -0.01em;
+}
+
+.brandSub {
+  font-size: 0.75rem;
+  color: var(--color-ink-muted);
+}
+
+.headerControls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.stageTag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-ink-secondary);
+  background-color: var(--color-surface-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.25rem 0.5rem;
+}
+
+.docsLink {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-brand);
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.docsLink:hover {
+  background-color: var(--color-brand-surface);
+  text-decoration: underline;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4) var(--space-10);
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: var(--space-8) var(--space-6) var(--space-10);
+  }
+}
+
+.footer {
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.footerInner {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: var(--space-4);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-2);
+  font-size: 0.75rem;
+  color: var(--color-ink-muted);
+}
+
+@media (min-width: 768px) {
+  .footerInner {
+    padding: var(--space-4) var(--space-6);
+  }
+}
