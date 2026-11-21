@@ -18,3 +18,4 @@ Proposed ──▶ Accepted ──▶ Deprecated / Superseded by ADR-XXX
 | [ADR-004](./ADR-004-redis-cache-and-queue-infrastructure.md) | Use Redis for Caching and Future Queue Infrastructure | Accepted | 2026-11-19 |
 | [ADR-005](./ADR-005-react-typescript-vite-frontend.md) | Use React, TypeScript, and Vite for the Frontend Application | Accepted | 2026-11-19 |
 | [ADR-006](./ADR-006-docker-compose-local-infrastructure.md) | Use Docker Compose for Reproducible Local Development Infrastructure | Accepted | 2026-11-19 |
+| [ADR-007](./ADR-007-data-integration-etl-and-jsonb-storage.md) | Hybrid Relational + JSONB Storage, Extensible ETL, and Alembic Migrations | Accepted | 2026-11-21 |

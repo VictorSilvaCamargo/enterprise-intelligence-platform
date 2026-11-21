@@ -1,0 +1,352 @@
+[
+  {
+    "accountId": "ACC-SYN-0001",
+    "companyName": "Northwind Fictional Retail #01",
+    "segment": "Mid-Market",
+    "region": "North America",
+    "annualContractUsd": 141744.09,
+    "onboardingDate": "2025-01-24",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0002",
+    "companyName": "Meridian Demo Manufacturing #02",
+    "segment": "Mid-Market",
+    "region": "Latin America",
+    "annualContractUsd": 195914.49,
+    "onboardingDate": "2025-02-07",
+    "isStrategic": false,
+    "accountStatus": "Onboarding"
+  },
+  {
+    "accountId": "ACC-SYN-0003",
+    "companyName": "Aurora Synthetic Systems #03",
+    "segment": "Growth",
+    "region": "Europe",
+    "annualContractUsd": 228908.79,
+    "onboardingDate": "2025-02-21",
+    "isStrategic": true,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0004",
+    "companyName": "Vanguard Mock Industries #04",
+    "segment": "Growth",
+    "region": "Asia-Pacific",
+    "annualContractUsd": 202386.36,
+    "onboardingDate": "2025-03-07",
+    "isStrategic": false,
+    "accountStatus": "Onboarding"
+  },
+  {
+    "accountId": "ACC-SYN-0005",
+    "companyName": "Cobalt Test Distribution #05",
+    "segment": "Mid-Market",
+    "region": "Latin America",
+    "annualContractUsd": 183091.51,
+    "onboardingDate": "2025-03-21",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0006",
+    "companyName": "Apex Fictional Energy #06",
+    "segment": "Mid-Market",
+    "region": "Europe",
+    "annualContractUsd": 184894.45,
+    "onboardingDate": "2025-04-04",
+    "isStrategic": true,
+    "accountStatus": "Onboarding"
+  },
+  {
+    "accountId": "ACC-SYN-0007",
+    "companyName": "Solstice Demo Healthcare #07",
+    "segment": "Mid-Market",
+    "region": "Asia-Pacific",
+    "annualContractUsd": 157138.15,
+    "onboardingDate": "2025-04-18",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0008",
+    "companyName": "Horizon Synthetic Foods #08",
+    "segment": "Mid-Market",
+    "region": null,
+    "annualContractUsd": 35201.3,
+    "onboardingDate": "2025-05-02",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0009",
+    "companyName": "Atlas Mock Aerospace #09",
+    "segment": "Enterprise",
+    "region": "Europe",
+    "annualContractUsd": 92558.15,
+    "onboardingDate": "2025-05-16",
+    "isStrategic": true,
+    "accountStatus": "Onboarding"
+  },
+  {
+    "accountId": "ACC-SYN-0010",
+    "companyName": "SynthCorp Logistics #10",
+    "segment": "Enterprise",
+    "region": "Latin America",
+    "annualContractUsd": 51484.41,
+    "onboardingDate": "2025-05-30",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0011",
+    "companyName": "Northwind Fictional Retail #11",
+    "segment": "Growth",
+    "region": "Latin America",
+    "annualContractUsd": 174825.05,
+    "onboardingDate": "2025-06-13",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0012",
+    "companyName": "Meridian Demo Manufacturing #12",
+    "segment": "Mid-Market",
+    "region": "Asia-Pacific",
+    "annualContractUsd": 91455.67,
+    "onboardingDate": "2025-06-27",
+    "isStrategic": true,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0013",
+    "companyName": "Aurora Synthetic Systems #13",
+    "segment": "Mid-Market",
+    "region": "North America",
+    "annualContractUsd": 63917.23,
+    "onboardingDate": "2025-07-11",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0014",
+    "companyName": "Vanguard Mock Industries #14",
+    "segment": "Mid-Market",
+    "region": "North America",
+    "annualContractUsd": 208194.51,
+    "onboardingDate": "2025-07-25",
+    "isStrategic": false,
+    "accountStatus": "Onboarding"
+  },
+  {
+    "accountId": "ACC-SYN-0015",
+    "companyName": "Cobalt Test Distribution #15",
+    "segment": "Mid-Market",
+    "region": "Asia-Pacific",
+    "annualContractUsd": 19308.93,
+    "onboardingDate": "2025-08-08",
+    "isStrategic": true,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0016",
+    "companyName": "Apex Fictional Energy #16",
+    "segment": "Mid-Market",
+    "region": "Asia-Pacific",
+    "annualContractUsd": 207465.45,
+    "onboardingDate": "2025-08-22",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0017",
+    "companyName": "Solstice Demo Healthcare #17",
+    "segment": "Growth",
+    "region": "Latin America",
+    "annualContractUsd": 126386.94,
+    "onboardingDate": "2025-09-05",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0018",
+    "companyName": "Horizon Synthetic Foods #18",
+    "segment": "Mid-Market",
+    "region": "Asia-Pacific",
+    "annualContractUsd": 24443.51,
+    "onboardingDate": "2025-09-19",
+    "isStrategic": true,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0019",
+    "companyName": "Atlas Mock Aerospace #19",
+    "segment": "Growth",
+    "region": "Asia-Pacific",
+    "annualContractUsd": 178768.27,
+    "onboardingDate": "2025-10-03",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0020",
+    "companyName": "SynthCorp Logistics #20",
+    "segment": "Enterprise",
+    "region": "North America",
+    "annualContractUsd": 219338.21,
+    "onboardingDate": "2025-10-17",
+    "isStrategic": false,
+    "accountStatus": "Onboarding"
+  },
+  {
+    "accountId": "ACC-SYN-0021",
+    "companyName": "Northwind Fictional Retail #21",
+    "segment": "Growth",
+    "region": "North America",
+    "annualContractUsd": 36636.34,
+    "onboardingDate": "2025-10-31",
+    "isStrategic": true,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0022",
+    "companyName": "Meridian Demo Manufacturing #22",
+    "segment": "Enterprise",
+    "region": null,
+    "annualContractUsd": 210441.0,
+    "onboardingDate": "2025-11-14",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0023",
+    "companyName": "Aurora Synthetic Systems #23",
+    "segment": "Enterprise",
+    "region": "Europe",
+    "annualContractUsd": 102161.06,
+    "onboardingDate": "2025-11-28",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0024",
+    "companyName": "Vanguard Mock Industries #24",
+    "segment": "Mid-Market",
+    "region": "Europe",
+    "annualContractUsd": 92925.12,
+    "onboardingDate": "2025-12-12",
+    "isStrategic": true,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0025",
+    "companyName": "Cobalt Test Distribution #25",
+    "segment": "Mid-Market",
+    "region": "Asia-Pacific",
+    "annualContractUsd": 74004.28,
+    "onboardingDate": "2025-12-26",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0026",
+    "companyName": "Apex Fictional Energy #26",
+    "segment": "Mid-Market",
+    "region": "North America",
+    "annualContractUsd": 184283.39,
+    "onboardingDate": "2026-01-09",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0027",
+    "companyName": "Solstice Demo Healthcare #27",
+    "segment": "Mid-Market",
+    "region": "Latin America",
+    "annualContractUsd": 162331.99,
+    "onboardingDate": "2026-01-23",
+    "isStrategic": true,
+    "accountStatus": "Onboarding"
+  },
+  {
+    "accountId": "ACC-SYN-0028",
+    "companyName": "Horizon Synthetic Foods #28",
+    "segment": "Enterprise",
+    "region": "North America",
+    "annualContractUsd": 228813.8,
+    "onboardingDate": "2026-02-06",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0029",
+    "companyName": "Atlas Mock Aerospace #29",
+    "segment": "Enterprise",
+    "region": "Latin America",
+    "annualContractUsd": 70956.98,
+    "onboardingDate": "2026-02-20",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0030",
+    "companyName": "SynthCorp Logistics #30",
+    "segment": "Growth",
+    "region": "North America",
+    "annualContractUsd": 143201.25,
+    "onboardingDate": "2026-03-06",
+    "isStrategic": true,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0031",
+    "companyName": "Northwind Fictional Retail #31",
+    "segment": "Mid-Market",
+    "region": "Europe",
+    "annualContractUsd": 188251.38,
+    "onboardingDate": "2026-03-20",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0032",
+    "companyName": "Meridian Demo Manufacturing #32",
+    "segment": "Growth",
+    "region": "North America",
+    "annualContractUsd": 190669.8,
+    "onboardingDate": "2026-04-03",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0033",
+    "companyName": "Aurora Synthetic Systems #33",
+    "segment": "Mid-Market",
+    "region": "North America",
+    "annualContractUsd": 146468.01,
+    "onboardingDate": "2026-04-17",
+    "isStrategic": true,
+    "accountStatus": "Active"
+  },
+  {
+    "accountId": "ACC-SYN-0034",
+    "companyName": "Vanguard Mock Industries #34",
+    "segment": "Growth",
+    "region": "Asia-Pacific",
+    "annualContractUsd": 106057.29,
+    "onboardingDate": "2026-05-01",
+    "isStrategic": false,
+    "accountStatus": "Onboarding"
+  },
+  {
+    "accountId": "ACC-SYN-0005",
+    "companyName": "Cobalt Test Distribution #05",
+    "segment": "Mid-Market",
+    "region": "Latin America",
+    "annualContractUsd": 183091.51,
+    "onboardingDate": "2025-03-21",
+    "isStrategic": false,
+    "accountStatus": "Active"
+  }
+]
