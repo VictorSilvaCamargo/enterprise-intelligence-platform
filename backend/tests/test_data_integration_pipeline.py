@@ -137,7 +137,7 @@ def test_pipeline_cleaning_type_validation_duplicates_and_quality_math() -> None
     registry = ExtractorRegistry()
     csv_payload = (
         b"Order ID,Order Date ,Customer Name,Unit Price ($),Quantity\n"
-        b"ORD-1,2026-05-01,  Acme   Corp ,\"$1,200.50\",2\n"
+        b'ORD-1,2026-05-01,  Acme   Corp ,"$1,200.50",2\n'
         b"ORD-2,15/05/2026,Northwind,250.00,4\n"
         b"ORD-3,2026-05-03,N/A,100.00,1\n"
         b"ORD-4,2026-05-04,Bad Numeric,NOT_A_NUMBER,3\n"

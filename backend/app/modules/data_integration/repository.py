@@ -93,9 +93,7 @@ class ImportJobRepository(BaseRepository[ImportJob]):
 
     model = ImportJob
 
-    async def get_by_id_with_source_name(
-        self, job_id: UUID
-    ) -> tuple[ImportJob, str | None] | None:
+    async def get_by_id_with_source_name(self, job_id: UUID) -> tuple[ImportJob, str | None] | None:
         """Fetch an import job joined with its owning data source name."""
         stmt = (
             select(ImportJob, DataSource.name)

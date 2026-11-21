@@ -1,8 +1,5 @@
 import { useRef, useState, type ChangeEvent } from "react";
-import {
-  importDataSourceFile,
-  previewDataSourceFile,
-} from "../../services/dataManagementService";
+import { importDataSourceFile, previewDataSourceFile } from "../../services/dataManagementService";
 import type { FilePreviewResponse, ImportExecutionResponse } from "../../types/dataManagement";
 import styles from "./DataManagement.module.css";
 import {
@@ -223,7 +220,8 @@ export function DataImportPage({ onImportCompleted }: DataImportPageProps) {
             <span className={getStatusPillClass(importResult.import_job.status)}>
               {importResult.import_job.status}
             </span>
-            , Quality score: <strong>{importResult.quality_report.overall_score.toFixed(1)}%</strong>
+            , Quality score:{" "}
+            <strong>{importResult.quality_report.overall_score.toFixed(1)}%</strong>
             ).{" "}
             <button
               type="button"
@@ -284,7 +282,9 @@ export function DataImportPage({ onImportCompleted }: DataImportPageProps) {
 
             {preview.formatting_issues.length > 0 ? (
               <div className={`${styles.alert} ${styles.alertWarning}`}>
-                <strong>Formatting &amp; Normalization Notes ({preview.formatting_issues.length}):</strong>
+                <strong>
+                  Formatting &amp; Normalization Notes ({preview.formatting_issues.length}):
+                </strong>
                 <ul className={styles.list}>
                   {preview.formatting_issues.slice(0, 8).map((issue, idx) => (
                     <li key={`${idx}-${issue}`}>{issue}</li>

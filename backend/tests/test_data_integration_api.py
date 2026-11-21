@@ -242,9 +242,7 @@ async def test_preview_and_import_csv_xlsx_json_end_to_end(pg_client: AsyncClien
     record_id = records_data["items"][0]["id"]
     assert records_data["items"][0]["content"]["customer_name"] == "Acme Labs"
 
-    record_detail = await pg_client.get(
-        f"/api/v1/data-sources/{csv_source_id}/records/{record_id}"
-    )
+    record_detail = await pg_client.get(f"/api/v1/data-sources/{csv_source_id}/records/{record_id}")
     assert record_detail.status_code == 200
     assert record_detail.json()["raw_content"]["Customer Name "] == "  Acme   Labs "
 

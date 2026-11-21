@@ -35,8 +35,8 @@ export function DataManagementSection() {
               Data Management
             </h1>
             <p className={styles.pageLead}>
-              Ingest CSV, XLSX, and JSON files, inspect ETL validation reports, monitor data
-              quality metrics, and explore persisted enterprise records.
+              Ingest CSV, XLSX, and JSON files, inspect ETL validation reports, monitor data quality
+              metrics, and explore persisted enterprise records.
             </p>
           </div>
         </div>

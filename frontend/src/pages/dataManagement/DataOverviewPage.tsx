@@ -51,9 +51,7 @@ export function DataOverviewPage({
       })
       .catch((err: unknown) => {
         if (active && !controller.signal.aborted) {
-          setError(
-            err instanceof Error ? err.message : "Failed to load Data Management overview.",
-          );
+          setError(err instanceof Error ? err.message : "Failed to load Data Management overview.");
           setLoading(false);
         }
       });
@@ -95,8 +93,7 @@ export function DataOverviewPage({
             {overview ? `${overview.average_quality_score.toFixed(1)}%` : "—"}
           </span>
           <span className={styles.kpiMeta}>
-            Completeness:{" "}
-            {overview ? `${overview.average_completeness_rate.toFixed(1)}%` : "—"}
+            Completeness: {overview ? `${overview.average_completeness_rate.toFixed(1)}%` : "—"}
           </span>
         </div>
 
@@ -177,7 +174,9 @@ export function DataOverviewPage({
             <h2 id="recent-imports-heading" className={styles.cardTitle}>
               Recent Import Jobs
             </h2>
-            <p className={styles.cardSubtitle}>Latest ingestion executions and validation counts.</p>
+            <p className={styles.cardSubtitle}>
+              Latest ingestion executions and validation counts.
+            </p>
           </div>
         </div>
 

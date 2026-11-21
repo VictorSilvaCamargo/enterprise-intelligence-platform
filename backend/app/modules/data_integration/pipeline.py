@@ -342,9 +342,7 @@ class ETLPipeline:
                 if not ok:
                     type_error_counts[norm_col] += 1
                     total_type_errors += 1
-                    row_errors.append(
-                        f"Column '{norm_col}' expected {target_type}, got {val!r}."
-                    )
+                    row_errors.append(f"Column '{norm_col}' expected {target_type}, got {val!r}.")
                 else:
                     coerced_dict[norm_col] = coerced_val
                     if note is not None:

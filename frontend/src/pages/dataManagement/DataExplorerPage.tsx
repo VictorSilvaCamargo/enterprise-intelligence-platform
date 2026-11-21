@@ -349,7 +349,12 @@ export function DataExplorerPage({ initialSourceId }: DataExplorerPageProps) {
       </section>
 
       {selectedRecord ? (
-        <div className={styles.modalBackdrop} role="dialog" aria-modal="true" aria-labelledby="record-modal-title">
+        <div
+          className={styles.modalBackdrop}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="record-modal-title"
+        >
           <div className={styles.modalPanel}>
             <div className={styles.cardHeader}>
               <div>

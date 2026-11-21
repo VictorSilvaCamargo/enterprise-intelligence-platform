@@ -111,9 +111,7 @@ def _build_operations_xlsx(rng: random.Random) -> Path:
         product, category, price = rng.choice(PRODUCTS)
         qty = rng.randint(2, 20)
         order_dt = base_date + timedelta(days=idx * 2)
-        date_str = (
-            order_dt.strftime("%d/%m/%Y") if idx % 6 == 0 else order_dt.isoformat()
-        )
+        date_str = order_dt.strftime("%d/%m/%Y") if idx % 6 == 0 else order_dt.isoformat()
         sales_orders.append(
             {
                 "Order Reference": f"OPS-{idx:04d}",
