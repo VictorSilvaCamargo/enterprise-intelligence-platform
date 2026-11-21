@@ -1,0 +1,8 @@
+Order ID,Order Date ,Customer Name,Unit Price ($),
+ERR-001,2026-05-01,  SynthCorp   Demo ,$120.50,Note A
+ERR-002,15/05/2026,Aurora Fictional,250.00,Note B
+ERR-003,2026-05-03,Northwind Demo,INVALID_NUM,Bad Price
+ERR-004,2026-99-99,Cobalt Mock,310.00,Bad Date
+ERR-005,2026-05-05,,199.90,Missing Customer
+,,,,
+ERR-001,2026-05-01,SynthCorp Demo,$120.50,Note A

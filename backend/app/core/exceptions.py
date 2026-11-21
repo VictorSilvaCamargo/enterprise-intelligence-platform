@@ -57,6 +57,78 @@ class ConfigurationError(AppError):
         )
 
 
+class BadRequestError(AppError):
+    """Raised when client input violates business or format constraints."""
+
+    def __init__(
+        self,
+        message: str = "Invalid request.",
+        *,
+        error_code: str = "BAD_REQUEST",
+        details: dict[str, Any] | None = None,
+    ) -> None:
+        super().__init__(
+            message,
+            status_code=status.HTTP_400_BAD_REQUEST,
+            error_code=error_code,
+            details=details,
+        )
+
+
+class NotFoundError(AppError):
+    """Raised when a requested domain resource does not exist."""
+
+    def __init__(
+        self,
+        message: str = "Requested resource was not found.",
+        *,
+        error_code: str = "NOT_FOUND",
+        details: dict[str, Any] | None = None,
+    ) -> None:
+        super().__init__(
+            message,
+            status_code=status.HTTP_404_NOT_FOUND,
+            error_code=error_code,
+            details=details,
+        )
+
+
+class PayloadTooLargeError(AppError):
+    """Raised when an uploaded payload exceeds configured size limits."""
+
+    def __init__(
+        self,
+        message: str = "Uploaded file exceeds maximum allowed size.",
+        *,
+        error_code: str = "PAYLOAD_TOO_LARGE",
+        details: dict[str, Any] | None = None,
+    ) -> None:
+        super().__init__(
+            message,
+            status_code=status.HTTP_413_CONTENT_TOO_LARGE,
+            error_code=error_code,
+            details=details,
+        )
+
+
+class UnprocessableEntityError(AppError):
+    """Raised when a syntactically accepted payload cannot be processed semantically."""
+
+    def __init__(
+        self,
+        message: str = "Unable to process submitted content.",
+        *,
+        error_code: str = "UNPROCESSABLE_ENTITY",
+        details: dict[str, Any] | None = None,
+    ) -> None:
+        super().__init__(
+            message,
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            error_code=error_code,
+            details=details,
+        )
+
+
 def _resolve_request_id(request: Request) -> str:
     state_request_id = getattr(request.state, "request_id", None)
     if isinstance(state_request_id, str) and state_request_id:

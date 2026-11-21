@@ -47,10 +47,12 @@ services:
     restart: unless-stopped
     environment:
       APP_NAME: ${APP_NAME:-Enterprise Intelligence Platform}
-      APP_VERSION: ${APP_VERSION:-0.1.0}
+      APP_VERSION: ${APP_VERSION:-0.2.0}
       APP_ENV: ${APP_ENV:-development}
       DEBUG: ${DEBUG:-false}
       LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      MAX_UPLOAD_SIZE_MB: ${MAX_UPLOAD_SIZE_MB:-10}
+      PREVIEW_SAMPLE_ROWS: ${PREVIEW_SAMPLE_ROWS:-20}
       API_V1_PREFIX: ${API_V1_PREFIX:-/api/v1}
       CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173,http://127.0.0.1:5173}
       POSTGRES_USER: ${POSTGRES_USER:-eip_user}
@@ -68,6 +70,8 @@ services:
       REDIS_SOCKET_TIMEOUT: ${REDIS_SOCKET_TIMEOUT:-3.0}
     ports:
       - "${BACKEND_PORT:-8000}:8000"
+    volumes:
+      - ./data:/app/data:ro
     depends_on:
       postgres:
         condition: service_healthy

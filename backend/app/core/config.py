@@ -23,10 +23,14 @@ class Settings(BaseSettings):
 
     # Application
     app_name: str = "Enterprise Intelligence Platform"
-    app_version: str = "0.1.0"
+    app_version: str = "0.2.0"
     app_env: str = "development"
     debug: bool = False
     log_level: str = "INFO"
+
+    # Data Integration & Upload Limits
+    max_upload_size_mb: int = 10
+    preview_sample_rows: int = 20
 
     # API & Security
     api_v1_prefix: str = "/api/v1"
@@ -101,6 +105,11 @@ class Settings(BaseSettings):
         if self.database_url_override:
             return "custom DATABASE_URL"
         return f"{self.postgres_host}:{self.postgres_port}/{self.postgres_db}"
+
+    @property
+    def max_upload_size_bytes(self) -> int:
+        """Return the maximum permitted upload file size in bytes."""
+        return self.max_upload_size_mb * 1024 * 1024
 
     @property
     def safe_redis_target(self) -> str:

@@ -4,8 +4,12 @@ import { env } from "../config/env";
 import type { BackendConnectionState } from "../types/health";
 import styles from "./MainLayout.module.css";
 
+export type PlatformSection = "overview" | "data-management";
+
 export interface MainLayoutProps {
   readonly connectionState: BackendConnectionState;
+  readonly activeSection?: PlatformSection;
+  readonly onNavigateSection?: (section: PlatformSection) => void;
   readonly children: ReactNode;
 }
 
@@ -25,7 +29,12 @@ function mapConnectionToHeaderBadge(state: BackendConnectionState): {
   }
 }
 
-export function MainLayout({ connectionState, children }: MainLayoutProps) {
+export function MainLayout({
+  connectionState,
+  activeSection = "overview",
+  onNavigateSection,
+  children,
+}: MainLayoutProps) {
   const badge = mapConnectionToHeaderBadge(connectionState);
 
   return (
@@ -40,12 +49,33 @@ export function MainLayout({ connectionState, children }: MainLayoutProps) {
             </svg>
             <div className={styles.brandText}>
               <span className={styles.brandTitle}>{env.appName}</span>
-              <span className={styles.brandSub}>Modular Platform Foundation</span>
+              <span className={styles.brandSub}>Modular Enterprise Intelligence</span>
             </div>
           </div>
 
+          {onNavigateSection ? (
+            <nav className={styles.navTabs} aria-label="Primary sections">
+              <button
+                type="button"
+                className={`${styles.navTab} ${activeSection === "overview" ? styles.navTabActive : ""}`}
+                aria-current={activeSection === "overview" ? "page" : undefined}
+                onClick={() => onNavigateSection("overview")}
+              >
+                Platform Overview
+              </button>
+              <button
+                type="button"
+                className={`${styles.navTab} ${activeSection === "data-management" ? styles.navTabActive : ""}`}
+                aria-current={activeSection === "data-management" ? "page" : undefined}
+                onClick={() => onNavigateSection("data-management")}
+              >
+                Data Management
+              </button>
+            </nav>
+          ) : null}
+
           <div className={styles.headerControls}>
-            <span className={styles.stageTag}>Stage 1 · v0.1.0</span>
+            <span className={styles.stageTag}>Stage 2 · v0.2.0</span>
             <StatusBadge tone={badge.tone} label={badge.label} />
             <a
               className={styles.docsLink}
@@ -63,8 +93,8 @@ export function MainLayout({ connectionState, children }: MainLayoutProps) {
 
       <footer className={styles.footer}>
         <div className={styles.footerInner}>
-          <span>{env.appName} — Architecture &amp; Foundation Shell</span>
-          <span>Modular Monolith · Ready for Stage 2 Evolution</span>
+          <span>{env.appName} — Enterprise Data &amp; Architecture Shell</span>
+          <span>Modular Monolith · Stage 2 Data Integration Active</span>
         </div>
       </footer>
     </div>
