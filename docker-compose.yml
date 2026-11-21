@@ -70,6 +70,8 @@ services:
       REDIS_SOCKET_TIMEOUT: ${REDIS_SOCKET_TIMEOUT:-3.0}
     ports:
       - "${BACKEND_PORT:-8000}:8000"
+    volumes:
+      - ./data:/app/data:ro
     depends_on:
       postgres:
         condition: service_healthy

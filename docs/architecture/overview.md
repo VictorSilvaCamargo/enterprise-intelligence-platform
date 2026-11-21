@@ -1,6 +1,6 @@
 # System Architecture Overview
 
-> **Stage:** 1 — Foundation & Architecture (`v0.1.0`)
+> **Stage:** 2 — Data Engineering & Integration (`v0.2.0`)
 
 ## 1. Architectural Vision
 
@@ -211,7 +211,9 @@ enterprise-intelligence-platform/
 ## 5. Persistence & Configuration Strategy
 
 ### Persistence
-- **PostgreSQL 17** persists cluster state in the named Docker volume `eip_postgres_data` (`/var/lib/postgresql/data`). No domain tables are created in Stage 1; `app/models/base.py` provides the shared `Base` metadata with naming conventions ready for Alembic migrations in Stage 2.
+- **Persistence Layer**: `app/models/base.py` provides the shared `Base` metadata and naming conventions; Stage 2 introduces Alembic (`backend/alembic/`) managing `data_sources`, `import_jobs`, and `imported_records` (hybrid relational + `JSONB` with GIN indexing).
+- **Data Integration Module (`app/modules/data_integration/`)**: Implements extensible file extractors (`CsvExtractor`, `XlsxExtractor`, `JsonExtractor`, `ExtractorRegistry`), the `ETLPipeline` (column normalization, whitespace/null cleanup, type inference, explicit row rejection, duplicate detection), weighted quality scoring (`quality.py`), async repositories, `DataIntegrationService`, and `/api/v1` REST routes.
+- **Data Management UI (`frontend/src/pages/dataManagement/`)**: Adds Overview, Import Data (with preview, Excel sheet selection, validation report, and confirm/cancel workflow), Data Sources, and Data Explorer (search, date range, dynamic field filter, pagination, and raw traceability modal).
 - **Redis 7** persists append-only logs and snapshots in the named Docker volume `eip_redis_data` (`/data`) via `--appendonly yes --save 60 1`.
 - Network segmentation isolates `postgres` and `redis` inside `eip_internal`, exposing them only to `backend` (plus optional mapped host ports for local debugging) while keeping `frontend` on `eip_edge`.
 
