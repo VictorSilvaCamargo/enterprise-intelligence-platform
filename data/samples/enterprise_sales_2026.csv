@@ -1,0 +1,61 @@
+Order ID,Order Date,Customer Name ,Region,Product,Category,Quantity,Unit Price (USD),Total Value,Status
+ORD-2026-0001,2026-01-08,SynthCorp Logistics,Europe,Cloud Telemetry Suite,Software,4,420.00,1680.00,Processing
+ORD-2026-0002,2026-01-11,Northwind Fictional Retail,North America,Industrial IoT Gateway,Hardware,10,890.00,8900.00,Completed
+ORD-2026-0003,2026-01-14,SynthCorp Logistics,North America,Cloud Telemetry Suite,Software,4,420.00,1680.00,Processing
+ORD-2026-0004,2026-01-17,Atlas Mock Aerospace,North America,Edge Sensor Kit,Hardware,9,245.50,2209.50,Processing
+ORD-2026-0005,2026-01-20,Apex Fictional Energy,Latin America,Edge Sensor Kit,Hardware,8,245.50,1964.00,Pending
+ORD-2026-0006,2026-01-23,SynthCorp Logistics,Latin America,Supply Chain Connector,Integration,12,650.00,7800.00,Completed
+ORD-2026-0007,2026-01-26,  Vanguard Mock Industries  ,Latin America,Supply Chain Connector,Integration,4,650.00,2600.00,Completed
+ORD-2026-0008,2026-01-29,Northwind Fictional Retail,Asia-Pacific,Cloud Telemetry Suite,Software,2,420.00,840.00,Completed
+ORD-2026-0009,2026-02-01,Atlas Mock Aerospace,Europe,Supply Chain Connector,Integration,13,650.00,8450.00,Completed
+ORD-2026-0010,2026-02-04,Horizon Synthetic Foods,North America,Enterprise Audit Pack,Compliance,15,310.00,4650.00,Completed
+ORD-2026-0011,2026-02-07,Horizon Synthetic Foods,Europe,Cloud Telemetry Suite,Software,14,420.00,5880.00,Pending
+ORD-2026-0012,2026-02-10,Atlas Mock Aerospace,,Supply Chain Connector,Integration,12,650.00,7800.00,Completed
+ORD-2026-0013,2026-02-13,Aurora Synthetic Systems,Europe,Cloud Telemetry Suite,Software,2,420.00,840.00,Processing
+ORD-2026-0014,2026-02-16,Apex Fictional Energy,Europe,Cloud Telemetry Suite,Software,8,420.00,3360.00,Completed
+ORD-2026-0015,2026-02-19,Cobalt Test Distribution,Europe,Industrial IoT Gateway,Hardware,4,890.00,3560.00,Completed
+ORD-2026-0016,2026-02-22,Atlas Mock Aerospace,Latin America,Cloud Telemetry Suite,Software,9,420.00,3780.00,Processing
+ORD-2026-0017,2026-02-25,Solstice Demo Healthcare,Asia-Pacific,Industrial IoT Gateway,Hardware,5,890.00,4450.00,Pending
+ORD-2026-0018,2026-02-28,Cobalt Test Distribution,North America,Industrial IoT Gateway,Hardware,4,890.00,3560.00,Completed
+ORD-2026-0019,2026-03-03,Apex Fictional Energy,Europe,Supply Chain Connector,Integration,2,650.00,1300.00,N/A
+ORD-2026-0020,2026-03-06,Cobalt Test Distribution,Latin America,Edge Sensor Kit,Hardware,11,245.50,2700.50,Completed
+ORD-2026-0021,2026-03-09,Solstice Demo Healthcare,Latin America,Enterprise Audit Pack,Compliance,5,310.00,1550.00,Processing
+ORD-2026-0022,2026-03-12,Horizon Synthetic Foods,Europe,Industrial IoT Gateway,Hardware,12,890.00,10680.00,Pending
+ORD-2026-0023,2026-03-15,  Atlas Mock Aerospace  ,Asia-Pacific,Enterprise Audit Pack,Compliance,6,310.00,1860.00,Processing
+ORD-2026-0024,2026-03-18,Horizon Synthetic Foods,Asia-Pacific,Industrial IoT Gateway,Hardware,2,890.00,1780.00,Completed
+ORD-2026-0025,2026-03-21,Meridian Demo Manufacturing,Latin America,Cloud Telemetry Suite,Software,13,420.00,5460.00,Completed
+ORD-2026-0026,2026-03-24,Northwind Fictional Retail,Asia-Pacific,Edge Sensor Kit,Hardware,7,245.50,1718.50,Pending
+ORD-2026-0027,2026-03-27,Horizon Synthetic Foods,Europe,Enterprise Audit Pack,Compliance,9,310.00,2790.00,Completed
+ORD-2026-0028,2026-03-30,Horizon Synthetic Foods,Europe,Cloud Telemetry Suite,Software,13,420.00,5460.00,Completed
+ORD-2026-0029,2026-04-02,Vanguard Mock Industries,Asia-Pacific,Cloud Telemetry Suite,Software,3,420.00,1260.00,Completed
+ORD-2026-0030,2026-04-05,Vanguard Mock Industries,Latin America,Cloud Telemetry Suite,Software,9,420.00,3780.00,Completed
+ORD-2026-0031,2026-04-08,Horizon Synthetic Foods,Latin America,Supply Chain Connector,Integration,3,650.00,1950.00,Completed
+ORD-2026-0032,2026-04-11,Horizon Synthetic Foods,North America,Industrial IoT Gateway,Hardware,10,890.00,8900.00,Completed
+ORD-2026-0033,2026-04-14,SynthCorp Logistics,North America,Enterprise Audit Pack,Compliance,15,310.00,4650.00,Completed
+ORD-2026-0034,2026-04-17,Aurora Synthetic Systems,,Supply Chain Connector,Integration,4,650.00,2600.00,Pending
+ORD-2026-0035,2026-04-20,Northwind Fictional Retail,Asia-Pacific,Cloud Telemetry Suite,Software,14,420.00,5880.00,Completed
+ORD-2026-0036,2026-04-23,Meridian Demo Manufacturing,Latin America,Edge Sensor Kit,Hardware,11,245.50,2700.50,Completed
+ORD-2026-0037,2026-04-26,Meridian Demo Manufacturing,Europe,Edge Sensor Kit,Hardware,9,245.50,2209.50,Pending
+ORD-2026-0038,2026-04-29,Aurora Synthetic Systems,Latin America,Enterprise Audit Pack,Compliance,12,310.00,3720.00,Completed
+ORD-2026-0039,2026-05-02,Cobalt Test Distribution,Asia-Pacific,Enterprise Audit Pack,Compliance,15,310.00,4650.00,Pending
+ORD-2026-0040,2026-05-05,Northwind Fictional Retail,Latin America,Enterprise Audit Pack,Compliance,4,310.00,1240.00,Completed
+ORD-2026-0041,08/05/2026,SynthCorp Logistics,Latin America,Supply Chain Connector,Integration,10,650.00,6500.00,Processing
+ORD-2026-0042,2026-05-11,Northwind Fictional Retail,North America,Cloud Telemetry Suite,Software,4,420.00,1680.00,Completed
+ORD-2026-0043,2026-05-14,Cobalt Test Distribution,North America,Cloud Telemetry Suite,Software,9,420.00,3780.00,Processing
+ORD-2026-0044,2026-05-17,Solstice Demo Healthcare,Latin America,Supply Chain Connector,Integration,9,650.00,5850.00,Processing
+ORD-2026-0045,2026-05-20,Atlas Mock Aerospace,Asia-Pacific,Edge Sensor Kit,Hardware,4,245.50,982.00,Completed
+ORD-2026-0046,2026-05-23,Aurora Synthetic Systems,North America,Enterprise Audit Pack,Compliance,2,310.00,620.00,Completed
+ORD-2026-0047,2026-05-26,Apex Fictional Energy,Asia-Pacific,Supply Chain Connector,Integration,8,650.00,5200.00,Completed
+ORD-2026-0048,2026-05-29,SynthCorp Logistics,  North   America  ,Cloud Telemetry Suite,Software,12,420.00,5040.00,Completed
+ORD-2026-0049,2026-06-01,Aurora Synthetic Systems,Latin America,Cloud Telemetry Suite,Software,4,420.00,1680.00,Pending
+ORD-2026-0050,2026-06-04,Meridian Demo Manufacturing,Asia-Pacific,Enterprise Audit Pack,Compliance,3,310.00,930.00,Completed
+ORD-2026-0051,2026-06-07,Aurora Synthetic Systems,North America,Enterprise Audit Pack,Compliance,8,310.00,2480.00,Pending
+ORD-2026-0052,2026-06-10,SynthCorp Logistics,North America,Cloud Telemetry Suite,Software,2,420.00,840.00,Processing
+ORD-2026-0053,2026-06-13,Apex Fictional Energy,Asia-Pacific,Industrial IoT Gateway,Hardware,8,890.00,7120.00,Processing
+ORD-2026-0054,2026-06-16,SynthCorp Logistics,Latin America,Enterprise Audit Pack,Compliance,7,310.00,2170.00,Completed
+ORD-2026-0055,2026-06-19,Vanguard Mock Industries,Asia-Pacific,Enterprise Audit Pack,Compliance,5,310.00,1550.00,Completed
+ORD-2026-0056,2026-06-22,Solstice Demo Healthcare,Latin America,Edge Sensor Kit,Hardware,4,245.50,982.00,Completed
+ORD-2026-0057,2026-06-25,SynthCorp Logistics,North America,Industrial IoT Gateway,Hardware,12,890.00,10680.00,Completed
+ORD-2026-0058,2026-06-28,SynthCorp Logistics,Asia-Pacific,Cloud Telemetry Suite,Software,9,420.00,3780.00,Pending
+ORD-2026-0003,2026-01-14,SynthCorp Logistics,North America,Cloud Telemetry Suite,Software,4,420.00,1680.00,Processing
+ORD-2026-0011,2026-02-07,Horizon Synthetic Foods,Europe,Cloud Telemetry Suite,Software,14,420.00,5880.00,Pending
