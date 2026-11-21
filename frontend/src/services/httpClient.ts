@@ -51,8 +51,37 @@ function buildRequestSignal(
   };
 }
 
-export async function requestJson<T>(
+function extractErrorMessage(payload: unknown, fallback: string): string {
+  if (
+    typeof payload === "object" &&
+    payload !== null &&
+    "message" in payload &&
+    typeof (payload as { message?: unknown }).message === "string"
+  ) {
+    const msg = (payload as { message: string }).message.trim();
+    if (msg) {
+      return msg;
+    }
+  }
+  return fallback;
+}
+
+export function buildQueryString(
+  params: Record<string, string | number | boolean | undefined | null>,
+): string {
+  const searchParams = new URLSearchParams();
+  for (const [key, value] of Object.entries(params)) {
+    if (value !== undefined && value !== null && String(value).trim() !== "") {
+      searchParams.set(key, String(value));
+    }
+  }
+  const encoded = searchParams.toString();
+  return encoded ? `?${encoded}` : "";
+}
+
+async function performRequest<T>(
   path: string,
+  init: Omit<RequestInit, "signal">,
   options: RequestOptions = {},
 ): Promise<HttpResponse<T>> {
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
@@ -64,8 +93,7 @@ export async function requestJson<T>(
 
   try {
     const response = await fetch(url, {
-      method: "GET",
-      headers: { Accept: "application/json" },
+      ...init,
       signal,
     });
 
@@ -75,13 +103,11 @@ export async function requestJson<T>(
     const isAccepted = response.ok || (options.acceptStatuses?.includes(response.status) ?? false);
 
     if (!isAccepted || !isJson) {
-      throw new ApiClientError(
-        `Request to ${normalizedPath} failed with status ${response.status}`,
-        {
-          status: response.status,
-          payload: parsedBody,
-        },
-      );
+      const fallback = `Request to ${normalizedPath} failed with status ${response.status}`;
+      throw new ApiClientError(extractErrorMessage(parsedBody, fallback), {
+        status: response.status,
+        payload: parsedBody,
+      });
     }
 
     return {
@@ -101,4 +127,34 @@ export async function requestJson<T>(
   } finally {
     cleanup();
   }
+}
+
+export async function requestJson<T>(
+  path: string,
+  options: RequestOptions = {},
+): Promise<HttpResponse<T>> {
+  return performRequest<T>(
+    path,
+    {
+      method: "GET",
+      headers: { Accept: "application/json" },
+    },
+    options,
+  );
+}
+
+export async function requestPostFormData<T>(
+  path: string,
+  formData: FormData,
+  options: RequestOptions = {},
+): Promise<HttpResponse<T>> {
+  return performRequest<T>(
+    path,
+    {
+      method: "POST",
+      headers: { Accept: "application/json" },
+      body: formData,
+    },
+    { timeoutMs: 30000, ...options },
+  );
 }
